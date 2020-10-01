@@ -1,0 +1,135 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :14:14:p, par l:::p {seq {comp label3:::p:100:p, space :10:10:p, comp radioButton1:::p::p, space :21:21:p, comp radioButton2:::p::p, space :26:26:p, comp radioButton3:::p::p, space :26:26:p, comp radioButton4:::p::p}, seq l {comp label2:::p:100:p, space u:::p, comp textField2:::p:165:p}, seq l {comp label5:::p:100:p, space u:::p, comp passwordField1:::p:165:p, space s:::p, comp progressBar1:::p::p}, seq l {comp label4:::p:100:p, space u:::p, comp textField3:::p:165:p, space s:::p, comp label8:::::x}, seq {comp label9:::p:100:p, space u:::p, comp textField6:::p:165:p}, comp label6:::p:100:p, seq l {comp label1:::p:100:p, par l {seq {space u:::p, comp textField1:::p:165:p}, seq l {space :p:34:p, comp label7:::p:180:p}}}}, space ::43:x}, seq t {space :0:202:x, comp button1:::p:130:p, space :p:166:p}}"
+			"$verticalGroup": "par l {seq {space :::p, comp label7:::p:60:p, space :::p, par b {comp textField1::b:p::p, comp label1::b:p:35:p}, space :p:5:p, par b {comp label2::b:p:35:p, comp textField2::b:p::p}, par l {comp label3:::p:35:p, seq {space :10:10:p, par l {comp radioButton1:::p::p, comp radioButton2:::p::p, comp radioButton3:::p::p, comp radioButton4:::p::p}}}, space :5:5:p, par b {comp label4::b:p:35:p, comp textField3::b:p::p, comp label8::b:p::p}, space :p:5:p, par b {comp label5::b:p:35:p, comp progressBar1::l:p:27:p, comp passwordField1::b:p::p}, space :5:5:p, comp label6:::p:35:p, space u:::p, par b {comp label9::b:p:35:p, comp textField6::b:p::p}, space :::p, comp button1:::p::p, space ::13:x}}"
+		} ) {
+			name: "this"
+			"title": "SignUp"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Vicky\\Documents\\Java\\EBook_Reader\\icons\\signup1.png" )
+			"background": &Color0 new java.awt.Color( 21, 21, 21, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Name:"
+				"foreground": &Color1 new java.awt.Color( 204, 204, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Phone No."
+				"foreground": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Gender"
+				"foreground": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Username"
+				"foreground": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Password"
+				"foreground": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "DOB"
+				"foreground": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"foreground": #Color1
+				"background": #Color0
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "textField1FocusLost", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+				"foreground": #Color1
+				"background": #Color0
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "textField2FocusLost", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+				"foreground": #Color1
+				"background": #Color0
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "textField3FocusLost", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton1"
+				"text": "M"
+				"foreground": #Color1
+				"background": &Color2 new java.awt.Color( 32, 32, 32, 255 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "radioButton1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton2"
+				"text": "F"
+				"foreground": #Color1
+				"background": #Color2
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "radioButton2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton3"
+				"text": "T"
+				"foreground": #Color1
+				"background": #Color2
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "radioButton3MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButton4"
+				"text": "Others"
+				"foreground": #Color1
+				"background": #Color2
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "radioButton4MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Signup"
+				"foreground": #Color1
+				"background": new java.awt.Color( 32, 32, 32, 255 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Sign Up"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 34, false )
+				"foreground": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JProgressBar" ) {
+				name: "progressBar1"
+				"foreground": sfield java.awt.Color cyan
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "Password Strength"
+				"horizontalAlignment": 0
+				"foreground": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "Email"
+				"foreground": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField6"
+				"foreground": #Color1
+				"background": #Color0
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "textField6FocusLost", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField1"
+				"foreground": #Color1
+				"background": #Color0
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "passwordField1FocusLost", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 5 )
+			"size": new java.awt.Dimension( 500, 430 )
+		} )
+	}
+}

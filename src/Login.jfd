@@ -1,0 +1,90 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:26:p, par l {seq t {space :0:0:x, par l {seq t {comp label3:::p:130:p, space s:::p}, seq t {comp label5:::p::p, space :p:57:p}}, par l:::p {comp button4:::::x, comp button2:::::x}, space :p:88:p}, seq {par l:::p {seq {comp label1:::p:90:p, space u:::p, comp textField1:::::x}, seq {par t:::p {seq {comp label4:::p::p, space :::x, comp textField2:::p:72:p}, comp label2:::p:100:p}, par l:::p {seq {space :p:31:p, comp button1:::p::p, space :::x, comp button3:::p::p}, seq {space :p:1:p, comp passwordField1:::p:224:p}}}}, space :::x}}}}"
+			"$verticalGroup": "par l {seq {space :::p, par b {comp label1::b:p:31:p, comp textField1::b:p::p}, space :p:12:p, par b {comp label2::b:p:30:p, comp passwordField1::b:p::p}, space :::p, par b {comp label4::b:p::p, comp textField2::b:p::p, comp button1::b:p::p, comp button3::b:p::p}, space :p:12:p, par b {comp label3::b:p:30:p, comp button2::b:p::p}, space u:::p, par b {comp label5::b:p::p, comp button4::b:p::p}, space ::13:x}}"
+		} ) {
+			name: "this"
+			"title": "Login"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Vicky\\Documents\\Java\\EBook_Reader\\icons\\login2.png" )
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Username"
+				"foreground": &Color0 new java.awt.Color( 204, 204, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Password"
+				"foreground": #Color0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"foreground": sfield java.awt.Color white
+				"background": &Color1 new java.awt.Color( 21, 21, 21, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField1"
+				"foreground": sfield java.awt.Color white
+				"background": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Login"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Vicky\\Documents\\Java\\EBook_Reader\\icons\\login.png" )
+				"foreground": &Color2 new java.awt.Color( 204, 204, 255, 255 )
+				"background": &Color3 new java.awt.Color( 32, 32, 32, 255 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Don't Have a account:"
+				"foreground": #Color0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "SignUp"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Vicky\\Documents\\Java\\EBook_Reader\\icons\\sign-up.png" )
+				"foreground": #Color2
+				"background": #Color3
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+				"foreground": sfield java.awt.Color white
+				"background": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "OTP"
+				"foreground": #Color0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Login"
+				"foreground": #Color2
+				"background": #Color3
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Forgot Password:"
+				"foreground": #Color0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Click here"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Vicky\\Documents\\Java\\EBook_Reader\\icons\\forgot.png" )
+				"foreground": #Color2
+				"background": #Color3
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button4MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 370, 245 )
+		} )
+	}
+}

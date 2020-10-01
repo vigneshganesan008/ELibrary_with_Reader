@@ -1,0 +1,353 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp tabbedPane2:::::x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp tabbedPane2:::::x, space :::p}}"
+		} ) {
+			name: "this"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Vicky\\Documents\\Java\\EBook_Reader\\icons\\settings.png" )
+			"title": "Settings"
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane2"
+				addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "tabbedPane2StateChanged", true ) )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {par l {seq l {space :p:36:p, par l {comp label1::l:p:72:p, comp label2::l:p::p, comp label15:::p::p}, space s:::p, par l {seq {space :p:26:p, comp button3:::p::p, space :p:44:p, comp button4:::p::p}, par l:::p {seq t {comp toggleButton1:::p::p, space :::x, comp toggleButton2:::p::p}, comp spinner1::l::257:x, comp comboBox1::l::257:x}}}, seq l {space :p:170:p, comp button5:::p::p, space u:::p, comp label16:::p::p}}, space ::98:x}}"
+					"$verticalGroup": "par l {seq l {space :p:28:p, par b {comp label1::b:p::p, comp spinner1::b:p::p}, space s:::p, par b {comp label2::b:p::p, comp comboBox1::b:p::p}, space :p:29:p, par b {comp toggleButton2::b:p::p, comp toggleButton1::b:p::p, comp label15::b:p::p}, space :::p, par b {comp button5::b:p::p, comp label16::b:p::p}, space ::48:x, par b {comp button4::b:p::p, comp button3::b:p::p}, space :p:25:p}}"
+				} ) {
+					name: "panel6"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Size"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Font"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner1"
+						"model": new javax.swing.SpinnerNumberModel( 1, 1, 100, 1 )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox1"
+						"font": new java.awt.Font( "Segoe UI", 0, 12 )
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "                                FONT"
+							addElement( "                                FONT" )
+							addElement( "Abadi MT Condensed Light" )
+							addElement( "Albertus Extra Bold" )
+							addElement( "Albertus Medium" )
+							addElement( "Antique Olive" )
+							addElement( "Arial" )
+							addElement( "Arial Black" )
+							addElement( "Arial MT" )
+							addElement( "Arial Narrow" )
+							addElement( "Bazooka" )
+							addElement( "Book Antiqua" )
+							addElement( "Bookman Old Style" )
+							addElement( "Boulder" )
+							addElement( "Calisto MT" )
+							addElement( "Calligrapher" )
+							addElement( "Century Gothic" )
+							addElement( "Century Schoolbook" )
+							addElement( "Cezanne" )
+							addElement( "CG Omega" )
+							addElement( "CG Times" )
+							addElement( "Charlesworth" )
+							addElement( "Chaucer" )
+							addElement( "Clarendon Condensed" )
+							addElement( "Comic Sans MS" )
+							addElement( "Copperplate Gothic Bold" )
+							addElement( "Copperplate Gothic Light" )
+							addElement( "Cornerstone" )
+							addElement( "Coronet" )
+							addElement( "Courier" )
+							addElement( "Courier New" )
+							addElement( "Cuckoo" )
+							addElement( "Dauphin" )
+							addElement( "Denmark" )
+							addElement( "Fransiscan" )
+							addElement( "Garamond" )
+							addElement( "Geneva" )
+							addElement( "Haettenschweiler" )
+							addElement( "Heather" )
+							addElement( "Helvetica" )
+							addElement( "Herald" )
+							addElement( "Impact" )
+							addElement( "Jester" )
+							addElement( "Letter Gothic" )
+							addElement( "Lithograph" )
+							addElement( "Lithograph Light" )
+							addElement( "Long Island" )
+							addElement( "Lucida Console" )
+							addElement( "Lucida Handwriting" )
+							addElement( "Lucida Sans" )
+							addElement( "Lucida Sans Unicode" )
+							addElement( "Marigold" )
+							addElement( "Market" )
+							addElement( "Matisse ITC" )
+							addElement( "MS LineDraw" )
+							addElement( "News GothicMT" )
+							addElement( "OCR A Extended" )
+							addElement( "Old Century" )
+							addElement( "Pegasus" )
+							addElement( "Pickwick" )
+							addElement( "Poster" )
+							addElement( "Pythagoras" )
+							addElement( "Sceptre" )
+							addElement( "Sherwood" )
+							addElement( "Signboard" )
+							addElement( "Socket" )
+							addElement( "Steamer" )
+							addElement( "Storybook" )
+							addElement( "Subway" )
+							addElement( "Tahoma" )
+							addElement( "Technical" )
+							addElement( "Teletype" )
+							addElement( "Tempus Sans ITC" )
+							addElement( "Times" )
+							addElement( "Times New Roman" )
+							addElement( "Times New Roman PS" )
+							addElement( "Trebuchet MS" )
+							addElement( "Tristan" )
+							addElement( "Tubular" )
+							addElement( "Unicorn" )
+							addElement( "Univers" )
+							addElement( "Univers Condensed" )
+							addElement( "Vagabond" )
+							addElement( "Verdana" )
+							addElement( "Westminster " )
+							addElement( "Allegro" )
+							addElement( "Amazone BT" )
+							addElement( "AmerType Md BT" )
+							addElement( "Arrus BT" )
+							addElement( "Aurora Cn BT" )
+							addElement( "AvantGarde Bk BT" )
+							addElement( "AvantGarde Md BT" )
+							addElement( "BankGothic Md BT" )
+							addElement( "Benguiat Bk BT" )
+							addElement( "BernhardFashion BT" )
+							addElement( "BernhardMod BT" )
+							addElement( "BinnerD" )
+							addElement( "Bremen Bd BT" )
+							addElement( "CaslonOpnface BT" )
+							addElement( "Charter Bd BT" )
+							addElement( "Charter BT" )
+							addElement( "ChelthmITC Bk BT" )
+							addElement( "CloisterBlack BT" )
+							addElement( "CopperplGoth Bd BT" )
+							addElement( "English 111 Vivace BT" )
+							addElement( "EngraversGothic BT" )
+							addElement( "Exotc350 Bd BT" )
+							addElement( "Freefrm721 Blk BT" )
+							addElement( "FrnkGothITC Bk BT" )
+							addElement( "Futura Bk BT" )
+							addElement( "Futura Lt BT" )
+							addElement( "Futura Md BT" )
+							addElement( "Futura ZBlk BT" )
+							addElement( "FuturaBlack BT" )
+							addElement( "Galliard BT" )
+							addElement( "Geometr231 BT" )
+							addElement( "Geometr231 Hv BT" )
+							addElement( "Geometr231 Lt BT" )
+							addElement( "GeoSlab 703 Lt BT" )
+							addElement( "GeoSlab 703 XBd BT" )
+							addElement( "GoudyHandtooled BT" )
+							addElement( "GoudyOLSt BT" )
+							addElement( "Humanst521 BT" )
+							addElement( "Humanst 521 Cn BT" )
+							addElement( "Humanst521 Lt BT" )
+							addElement( "Incised901 Bd BT" )
+							addElement( "Incised901 BT" )
+							addElement( "Incised901 Lt BT" )
+							addElement( "Informal011 BT" )
+							addElement( "Kabel Bk BT" )
+							addElement( "Kabel Ult BT" )
+							addElement( "Kaufmann Bd BT" )
+							addElement( "Kaufmann BT" )
+							addElement( "Korinna BT" )
+							addElement( "Lydian BT" )
+							addElement( "Monotype Corsiva" )
+							addElement( "NewsGoth BT" )
+							addElement( "Onyx BT" )
+							addElement( "OzHandicraft BT" )
+							addElement( "PosterBodoni BT" )
+							addElement( "PTBarnum BT" )
+							addElement( "Ribbon131 Bd BT" )
+							addElement( "Serifa BT" )
+							addElement( "Serifa Th BT" )
+							addElement( "ShelleyVolante BT" )
+							addElement( "Souvenir Lt BT" )
+							addElement( "Staccato222 BT" )
+							addElement( "Swis721 BlkEx BT" )
+							addElement( "Swiss911 XCm BT" )
+							addElement( "TypoUpright BT" )
+							addElement( "ZapfEllipt BT" )
+							addElement( "ZapfHumnst BT" )
+							addElement( "ZapfHumnst Dm BT" )
+							addElement( "Zurich BlkEx BT" )
+							addElement( "Zurich Ex BT " )
+						}
+					} )
+					add( new FormComponent( "javax.swing.JToggleButton" ) {
+						name: "toggleButton1"
+						"text": "Bold"
+					} )
+					add( new FormComponent( "javax.swing.JToggleButton" ) {
+						name: "toggleButton2"
+						"text": "Italics"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button3"
+						"text": "Apply"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button4"
+						"text": "OK"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button4MouseClicked", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label15"
+						"text": "Style"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button5"
+						"text": "Color"
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button5MouseClicked", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label16"
+						"text": "Color Sample"
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Reader Settings"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp tabbedPane3::::469:x, space :::p}}"
+					"$verticalGroup": "par l {seq l {comp tabbedPane3:::::x, space :::p}}"
+				} ) {
+					name: "panel2"
+					add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "tabbedPane3"
+						addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "tabbedPane3StateChanged", true ) )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq l {space :p:54:p, par l:::p {comp label3:::::x, comp label4::l:::x, comp label5::l:::x, comp label6::l:::x, comp label7::t:::x, comp label8::t:::x, comp label17::l:p:334:p}, space ::81:x}}"
+							"$verticalGroup": "par l {seq l {space :::p, comp label3:::p:22:p, space u:::p, comp label4:::p:22:p, space u:::p, comp label5:::p:22:p, space u:::p, comp label6:::p:22:p, space u:::p, comp label7:::p:22:p, space u:::p, comp label8:::p:24:p, space :::p, comp label17:::p:24:p, space ::36:x}}"
+						} ) {
+							name: "panel3"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label3"
+								"text": "text"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label4"
+								"text": "text"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label5"
+								"text": "text"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label6"
+								"text": "text"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label7"
+								"text": "text"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label8"
+								"text": "text"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label17"
+								"text": "text"
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Info"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq {par l {seq l {space :p:50:p, par l {comp label10:::p::p, comp label9:::p::p}, space :p:49:p, par l:::p {comp textField1::l::210:x, comp textField2::l::210:x}}, seq l {space :p:163:p, comp button1:::p::p}}, space ::64:x}}"
+							"$verticalGroup": "par l {seq l {space :p:27:p, par b {comp label9::b:p::p, comp textField1::b:p::p}, space :p:25:p, par b {comp label10::b:p::p, comp textField2::b:p::p}, space ::118:x, comp button1:::p::p, space :::p}}"
+						} ) {
+							name: "panel4"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label9"
+								"text": "Current Username"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label10"
+								"text": "New Username"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "button1"
+								"text": "Change Username"
+								addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textField1"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textField2"
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Change Username"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq t {space ::350:x, comp label14:::p::p, space :p:32:p}, seq {par l {seq {par l {seq {space :p:18:p, comp label11:::p::p, space :p:30:p}, seq t {space :::p, par l {comp label12:::p::p, comp label13:::p::p}}}, space s:::p, par t {par l:::p {comp textField4::::166:x, comp passwordField1::::166:x}, comp passwordField2:::p:165:p}, space s:::p, comp progressBar1:::p:131:p}, seq l {space :p:169:p, comp button2:::p::p}}, space :::x}}"
+							"$verticalGroup": "par l {seq l {par l {seq {space :p:27:p, comp label11:::p::p}, seq t {space :::p, comp textField4:::p::p}}, space :p:3:p, comp label14:::p::p, space :::x, par l {seq {par b {comp label12::b:p::p, comp passwordField1::b:p::p}, space :p:27:p, par b {comp label13::b:p::p, comp passwordField2::b:p::p}}, seq t {comp progressBar1:::p:30:p, space :p:57:p}}, space :p:30:p, comp button2:::p::p, space :::p}}"
+						} ) {
+							name: "panel5"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label11"
+								"text": "Current Password"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label12"
+								"text": "New Password"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label13"
+								"text": "Re-enter new password"
+							} )
+							add( new FormComponent( "javax.swing.JButton" ) {
+								name: "button2"
+								"text": "Change Password"
+								addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textField4"
+								addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "textField4FocusLost", true ) )
+							} )
+							add( new FormComponent( "javax.swing.JProgressBar" ) {
+								name: "progressBar1"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label14"
+								"text": "Password Strength"
+							} )
+							add( new FormComponent( "javax.swing.JPasswordField" ) {
+								name: "passwordField1"
+								addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "passwordField1FocusLost", true ) )
+							} )
+							add( new FormComponent( "javax.swing.JPasswordField" ) {
+								name: "passwordField2"
+								addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "passwordField2FocusLost", true ) )
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Change password"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Profile Settings"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 495, 380 )
+		} )
+	}
+}

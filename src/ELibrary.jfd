@@ -1,0 +1,177 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:22:p, comp label1:::p:59:p, space :::p, comp textField1:::p:129:p, space :::p, comp button1:::p:51:p, space s:::p, comp label2:::p:59:p, space :6:6:p, comp textField2:::p:129:p, space :6:6:p, comp button2:::p:51:p, space :p:58:p, comp label3:::p::p, space :::p, comp comboBox1:::p::p, space :::p, comp button3:::p:51:p, space :p:39:p, comp button4:::p::p, space :::x}, seq l {space :::p, comp scrollPane1::::1030:x, space :::p}}"
+			"$verticalGroup": "par l {seq {space :::p, par b {comp label1::b:p::p, comp textField1::b:p::p, comp button1::b:p:22:p, seq l {space :7:7:p, comp label2:::p::p}, comp textField2::l:p::p, seq l {space :4:4:p, par b {comp button2::b:p:22:p, comp label3::b:p::p, comp button4::b:p::p, comp comboBox1::b:p::p, comp button3::b:p:22:p}}}, space :::p, comp scrollPane1::::401:x, space :::p}}"
+		} ) {
+			name: "this"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Vicky\\Documents\\Java\\EBook_Reader\\icons\\elib.png" )
+			"title": "E-Library"
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "Cover" )
+						add( "Title" )
+						add( "ISBN" )
+						add( "Edition" )
+						add( "Publisher" )
+						add( "Authors" )
+						add( "Genre" )
+						add( "Path" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 0, 149, 149, true ) )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					"font": new java.awt.Font( "Segoe UI", 1, 30 )
+					"foreground": new java.awt.Color( 204, 204, 255, 255 )
+					"background": new java.awt.Color( 32, 32, 32, 255 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "table1MouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Search"
+				"foreground": &Color0 new java.awt.Color( 204, 204, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"text": "Title"
+				"foreground": #Color0
+				"background": &Color1 new java.awt.Color( 21, 21, 21, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Go"
+				"foreground": #Color0
+				"background": &Color2 new java.awt.Color( 32, 32, 32, 255 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Search"
+				"foreground": #Color0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+				"text": "Author"
+				"foreground": #Color0
+				"background": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Go"
+				"foreground": #Color0
+				"background": #Color2
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "--------Choose a Genre--------"
+					addElement( "--------Choose a Genre--------" )
+					addElement( "Action and adventure" )
+					addElement( "Art" )
+					addElement( "Alternate history " )
+					addElement( "Autobiography" )
+					addElement( "Anthology " )
+					addElement( "Biography" )
+					addElement( "Chick lit " )
+					addElement( "Book review" )
+					addElement( "Children's " )
+					addElement( "Cookbook" )
+					addElement( "Comic book " )
+					addElement( "Diary" )
+					addElement( "Coming-of-age " )
+					addElement( "Dictionary" )
+					addElement( "Crime " )
+					addElement( "Encyclopedia" )
+					addElement( "Drama " )
+					addElement( "Guide" )
+					addElement( "Fairytale " )
+					addElement( "Health" )
+					addElement( "Fantasy \tHistory" )
+					addElement( "Graphic novel " )
+					addElement( "Journal" )
+					addElement( "Historical fiction " )
+					addElement( "Math" )
+					addElement( "Horror " )
+					addElement( "Memoir" )
+					addElement( "Mystery " )
+					addElement( "Prayer" )
+					addElement( "Paranormal romance " )
+					addElement( "Religion, spirituality, and new age" )
+					addElement( "Picture book " )
+					addElement( "Textbook" )
+					addElement( "Poetry " )
+					addElement( "Review" )
+					addElement( "Political thriller " )
+					addElement( "Science" )
+					addElement( "Romance " )
+					addElement( "Self help" )
+					addElement( "Satire " )
+					addElement( "Travel" )
+					addElement( "Science fiction " )
+					addElement( "True crime" )
+					addElement( "Short story \t" )
+					addElement( "Suspense \t" )
+					addElement( "Thriller \t" )
+					addElement( "Young adult \t" )
+				}
+				"foreground": #Color0
+				"background": #Color1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Genre"
+				"foreground": #Color0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Go"
+				"foreground": #Color0
+				"background": #Color2
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Show All"
+				"foreground": #Color0
+				"background": #Color2
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button4MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 980, 485 )
+		} )
+	}
+}
