@@ -155,7 +155,9 @@ public class Reader extends JFrame {
         else{
             JOptionPane.showMessageDialog(null,"Open book First");
         }
-    }
+    }/**
+ * @author Vignesh
+ */
 
     private void button2MouseClicked(MouseEvent e) {
         // TODO add your code here

@@ -60,7 +60,9 @@ public class ForgotPassword extends JFrame {
             throw new RuntimeException(e);
         }
     }
-
+/**
+ * @author Vignesh
+ */
     private void okButtonMouseClicked(MouseEvent e) {
         // TODO add your code here
          TripleDea td = new TripleDea();

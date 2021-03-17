@@ -3,7 +3,7 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESedeKeySpec;
-import org.apache.commons.codec.binary.Base64;
+import java.util.Base64;
 
 public class TripleDea {
 
@@ -37,7 +37,7 @@ public class TripleDea {
             cipher.init(Cipher.ENCRYPT_MODE, key);
             byte[] plainText = unencryptedString.getBytes(UNICODE_FORMAT);
             byte[] encryptedText = cipher.doFinal(plainText);
-            encryptedString = new String(Base64.encodeBase64(encryptedText));
+            encryptedString = new String(Base64.getEncoder().encode(encryptedText));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -49,7 +49,7 @@ public class TripleDea {
         byte[] encryptedStringBytes = encryptedString.getBytes();
         try {
             cipher.init(Cipher.DECRYPT_MODE, key);
-            byte[] encryptedText = Base64.decodeBase64(encryptedStringBytes);
+            byte[] encryptedText = Base64.getDecoder().decode(encryptedStringBytes);
             byte[] plainText = cipher.doFinal(encryptedText);
             decryptedText = new String(plainText);
         } catch (Exception e) {

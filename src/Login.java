@@ -142,7 +142,9 @@ public class Login extends JFrame {
         new ForgotPassword().setVisible(true);
         this.dispose();
     }
-
+/**
+ * @author Vignesh
+ */
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         // Generated using JFormDesigner Evaluation license - Vignesh

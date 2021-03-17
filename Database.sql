@@ -68,20 +68,13 @@ select *
 from log 
 where session_begin >= to_timestamp('14-04-2020 12:00:00', 'dd-mm-yyyy hh24:mi:ss')
   and session_end <= to_timestamp('14-04-2020 14:00:00', 'dd-mm-yyyy hh24:mi:ss');
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  update books set rating =(select sum(rating)/count(rating) 
-									from ratingtable 
-									where book_isbn=1234567890  
-									group by book_isbn)
-	where isbn=1234567890;
+
+update ratingtable set rating = (
+                                select sum(rating)/count(rating)
+								from ratingtable
+								where book_isbn=1234567890
+								group by book_isbn
+                                )
+where book_isbn=1234567890;
 	
 	

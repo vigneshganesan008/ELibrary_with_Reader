@@ -202,3 +202,6 @@ public class OpenReader extends JFrame {
     private JLabel label4;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }
+/**
+ * @author Vignesh
+ */

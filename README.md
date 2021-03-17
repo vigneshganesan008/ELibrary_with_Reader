@@ -1,7 +1,7 @@
-A E-library with a inbuilt E-book Reader Using Java and Oracle Database
+An Elibrary with an inbuilt ebook reader developed using Java and Orcale DB.
 
-Setup:
-  1. Change the Oracle connection credentials; 
-  2. Change icon path,ecover path in the code; 
-  3. Run using intellij;
-  4. add the jar files(included) to your intellij project;
+Change the orcale connection credentials; 
+Change icon path,ecover path in the code; 
+Run using intellj;
+Add the jar files (included) to your Intellij project;
+The tables need are provide in the "Database.sql" file;
