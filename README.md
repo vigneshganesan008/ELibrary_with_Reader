@@ -5,3 +5,5 @@ Change icon path,ecover path in the code; <br />
 Run using intellj;<br />
 Add the jar files (included) to your Intellij project;<br />
 The tables need are provide in the "Database.sql" file;<br />
+
+Demo : https://youtu.be/gmDDMOFNoQ8
