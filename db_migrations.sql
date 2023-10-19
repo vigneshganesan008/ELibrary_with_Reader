@@ -52,29 +52,4 @@ on log
 for each row
 Begin
 	:new.duration := (cast(:new.session_end as date)-cast(:new.session_begin as date))*24*60;
-end;
-
--------------------------------------------------------------------------------------------------------------------------------
-+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+
--------------------------------------------------------------------------------------------------------------------------------
-select (session_end - session_begin) from log;
-select extract(second from (session_end - session_begin)) from log;
-select extract(minute from (session_end - session_begin)) from log;
-select extract(hour from (session_end - session_begin)) from log;
-select extract(day from (session_end - session_begin)) from log;
-select (cast(session_end as date)-cast(session_begin as date))*24*60*60 from log;
-
-select * 
-from log 
-where session_begin >= to_timestamp('14-04-2020 12:00:00', 'dd-mm-yyyy hh24:mi:ss')
-  and session_end <= to_timestamp('14-04-2020 14:00:00', 'dd-mm-yyyy hh24:mi:ss');
-
-update ratingtable set rating = (
-                                select sum(rating)/count(rating)
-								from ratingtable
-								where book_isbn=1234567890
-								group by book_isbn
-                                )
-where book_isbn=1234567890;
-	
-	
+end;	
